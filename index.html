@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es-co">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./styles/style.css" />
+  <link rel="icon" type="image/x-icon" href="./imgs/favicon.png">
+  <title> Encriptador Challenge Alura LATAM </title>
+</head>
+
+<body>
+  <header>
+    <figure>
+      <img src="./imgs/logo.png" alt="logo de Alura" />
+    </figure>
+  </header>
+  <main>
+    <section class="contenedor-principal">
+      <textarea placeholder="Ingrese el texto aquí" id="input-text"></textarea>
+
+      <div class="contenedor-botones">
+        <div class="contenedor-botones-parrafo">
+          <img src="./imgs/signo-exclamacion.png" alt="Signo exclamación">
+          <span>Solo letras minúsculas y sin acentos</span>
+        </div>
+        <button type="button" class="btn-encriptar" id="btn-encriptar">Encriptar</button>
+        <button type="button" class="btn-desencriptar" id="btn-desencriptar">Desencriptar</button>
+      </div>
+    </section>
+    <section class="contenedor-secundario">
+      <figure>
+        <img class="muneco" src="./imgs/muneco.png" alt="Muñeco" />
+      </figure>
+      <h2 id="mensaje-encontrado">Ningún mensaje fue encontrado</h2>
+      <textarea placeholder="Ingresa el texto que desees encriptar o desencriptar." id="ouput-text" disabled></textarea>
+      <button type="button" class="btn-copiar" id="btn-copiar">Copiar</button>
+    </section>
+  </main>
+  <script src="./scripts/app.js" defer></script>
+</body>
+
+</html>

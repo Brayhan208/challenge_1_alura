@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root {
+    --color-primario: #EEEEEE;
+    --color-secundario: #0A3871;
+    --color-terciario: black;
+    --color-hover: #686D76;
+
+    --fuente-Inter: "Inter", sans serif;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--color-primario);
+    font-family: var(--fuente-Inter);
+    font-weight: 400;
+}
+
+header {
+    padding: 40px;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    width: auto;
+    height: auto;
+}
+
+.contenedor-principal {
+    width: 100%;
+    height: 100%;
+}
+
+.contenedor-principal textarea {
+    background-color: var(--color-primario);
+    font-size: 2rem;
+    width: 50%;
+    height: 30vh;
+    cursor: pointer;
+    resize: none;
+    border: none;
+}
+
+.contenedor-principal textarea::placeholder {
+    color: var(--color-secundario);
+}
+
+.contenedor-botones {
+    padding-top: 200px;
+    width: auto;
+}
+
+.contenedor-botones-parrafo {
+    justify-content: center;
+    font-size: 0.90rem;
+    width: 76%;
+}
+
+.contenedor-botones button {
+    font-size: 1rem;
+    margin-right: 60px;
+    margin-top: 16px;
+    border-radius: 24px;
+    width: 18%;
+    padding: 24px;
+
+}
+
+.btn-encriptar {
+    color: var(--color-primario);
+    background-color: var(--color-secundario);
+}
+
+.btn-encriptar:hover {
+    background-color: var(--color-hover);
+}
+
+.btn-desencriptar {
+    color: var(--color-primario);
+    background-color: var(--color-hover);
+}
+
+.btn-desencriptar:hover {
+    background-color: var(--color-secundario);
+}
+
+.contenedor-secundario {
+    background-color: var(--color-primario);
+    width: 30%;
+    margin-right: 40px;
+    padding: 30px;
+    border: 1px solid var(--color-terciario);
+    border-radius: 32px;
+}
+
+.muneco {
+    width: 100%;
+    padding-top: 50px;
+    padding-top: 10px;
+}
+
+.contenedor-secundario h2 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+.contenedor-secundario textarea {
+    background-color: var(--color-primario);
+    height: 150px;
+    width: 100%;
+    border: none;
+    padding: 10px;
+    text-align: center;
+    font-size: 1rem;
+    overflow: auto;
+    resize: none;
+}
+
+.contenedor-secundario textarea::placeholder {
+    color: var(--color-terciario);
+}
+
+.btn-copiar {
+    font-size: 1rem;
+    width: 40%;
+    padding: 16px;
+    border-radius: 24px;
+    color: var(--color-primario);
+    background-color: var(--color-secundario);
+    border-color: var(--color-terciario);
+}
+
+.btn-copiar:hover {
+    background-color: var(--color-hover);
+}
+
+/* Diseño tablet */
+@media(max-width: 1200px) {
+
+    header {
+        padding: 24px;
+    }
+
+    main {
+        width: auto;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .contenedor-botones {
+        width: 100%;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 60px;
+    }
+
+    .contenedor-botones button {
+        width: 30%;
+
+        margin-right: 0px;
+    }
+
+    .contenedor-secundario {
+        width: auto;
+        margin-right: 0px;
+        margin-bottom: 10px;
+    }
+
+    .contenedor-secundario img {
+        justify-content: center;
+        display: none;
+    }
+
+    .btn-copiar {
+        width: 50%;
+    }
+
+}
+
+/* Diseño celular */
+@media (max-width: 699px) {
+
+
+    .contenedor-principal textarea {
+        font-size: 1.5rem;
+        height: 15vh;
+    }
+
+    .contenedor-botones button {
+        width: 40%;
+
+        margin-right: 0px;
+    }
+
+    .btn-copiar {
+        width: 50%;
+    }
+
+    .contenedor-secundario {
+        width: 50%;
+
+    }
+}
