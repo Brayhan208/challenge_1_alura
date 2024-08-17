@@ -23,9 +23,9 @@ Este curso se llevo en la plataforma [Alura LATAM](https://www.aluracursos.com/)
     * La letra "o" es convertida para "spt"
     * La letra "u" es convertida para "mrv"
 
-1. ***(Importante)*** **No debe permitir letras en mayusculas ni acentos ni caracteres especiales.**
+2. ***(Importante)*** **No debe permitir letras en mayusculas ni acentos ni caracteres especiales.**
 
-1. **Boton de copiar resultado encriptado o desencriptado.**
+2. **Boton de copiar resultado encriptado o desencriptado.**
 
 
 ## Capturas del resultado
